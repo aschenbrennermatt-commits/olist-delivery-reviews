@@ -1,0 +1,12 @@
+# Raw data: download it from Kaggle (see README). Don't commit it.
+data/raw/*
+!data/raw/.gitkeep
+
+# Python and Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.env
+
+# macOS
+.DS_Store
