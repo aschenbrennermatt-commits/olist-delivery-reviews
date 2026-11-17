@@ -1,3 +1,5 @@
+-- Monthly GMV (item prices, excl. canceled/unavailable), Jan 2017 – Aug 2018, with delivered-only comparison
+
 WITH order_revenue AS (
 	SELECT o.order_id,
 		   o.order_purchase_timestamp,

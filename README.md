@@ -6,14 +6,14 @@
 
 **Tools:** PostgreSQL, SQL (CTEs, window functions), Python (pandas, SciPy, statsmodels), Jupyter.
 
-> Status: **Step 1 of 5 done.** The database is built, keyed and checked.
+> Status: **Step 2 of 5 done.** Database built and SQL analysis complete.
 
 ---
 
 ## Project plan
 
 - [x] **1. Database:** schema with primary and foreign keys, load all 9 CSVs, validate the load
-- [ ] **2. SQL analysis:** monthly revenue, repeat customers, delivery time by state, best and worst sellers
+- [x] **2. SQL analysis:** monthly revenue, repeat customers, delivery time by state, best and worst sellers
 - [ ] **3. Statistics:** late vs on-time review scores (test + effect size + confidence interval), shipping cost across regions, regression, a bootstrapped confidence interval
 - [ ] **4. Notebook:** one clean notebook that tells the story with charts
 - [ ] **5. Summary:** one page that ends with a business recommendation and says plainly what the data can't prove

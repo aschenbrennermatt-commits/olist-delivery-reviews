@@ -1,3 +1,5 @@
+-- Delivery time vs promised time and late rate by customer state (states with 100+ delivered orders)
+
 WITH delivered AS (
 	SELECT c.customer_state,
 		o.order_delivered_customer_date::date

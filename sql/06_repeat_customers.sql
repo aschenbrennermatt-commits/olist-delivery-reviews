@@ -1,3 +1,5 @@
+-- Repeat customers: how many real people (customer_unique_id) ordered once, twice, 3+ times?
+
 WITH orders_per_person AS (
 	SELECT c.customer_unique_id AS person,
 		COUNT(*) AS num_orders

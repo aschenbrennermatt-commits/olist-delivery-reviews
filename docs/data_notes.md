@@ -19,6 +19,13 @@ A running log of every data quirk found and what was done about it. Interviewers
 
 ## Decisions still to make
 
+## Decisions made in step 2
+
+- **GMV** = sum of item prices (`order_items.price`), no shipping, excluding canceled and unavailable orders. Orders still in transit are included.
+- **Trend window:** Jan 2017 – Aug 2018. 2016 is sparse with a missing month; Sep–Oct 2018 were cut off by the snapshot, so most of those orders weren't delivered yet.
+- **Minimum sample sizes:** state comparisons need 100+ delivered orders (drops RR and AP); seller comparisons need 30+ orders.
+- **Key finding:** northern states (RR, AP, AM) are slowest but rarely late because their promised windows are long (~46 days). Northeastern states (AL, MA, SE) are late most often, with tighter promises (~31–33 days). Customers seem to react to missed promises, not slowness itself.
+
 - [ ] One review per order: which one, and how many orders that affects (#3)
 - [ ] Definition of "late": delivered date vs estimated date, compared as dates or timestamps
 - [ ] Which order statuses are in scope for the review analysis (#9)

@@ -1,3 +1,5 @@
+-- Month-over-month GMV growth (absolute and %), plus a daily check confirming the Nov 2017 Black Friday spike
+
 WITH order_revenue AS (
 	SELECT o.order_id,
 		   o.order_purchase_timestamp,
@@ -28,6 +30,8 @@ SELECT month,
 				/ LAG(gmv) OVER (ORDER BY month), 1) AS pct_change
 FROM monthly
 ORDER BY month;
+
+-- Daily orders in Nov 2017: was 24 Nov (Black Friday) the peak?
 
 SELECT order_purchase_timestamp::date AS day,
 	COUNT(*) AS orders

@@ -1,3 +1,5 @@
+-- Worst 10 sellers by average review (delivered orders, sellers with 30+ orders)
+
 WITH seller_stats AS(
 	SELECT oi.seller_id,
 		COUNT(DISTINCT oi.order_id) AS orders,
