@@ -6,7 +6,7 @@
 
 **Tools:** PostgreSQL, SQL (CTEs, window functions), Python (pandas, SciPy, statsmodels), Jupyter.
 
-> Status: **Step 4 of 5 done.** Analysis complete; summary and recommendation in progress.
+> Status: **Complete.** All 5 steps done.
 
 ## Key results
 
@@ -25,6 +25,8 @@ twice the Southeast's median shipping cost, and the Northeast has the highest la
 
 Full analysis: [`notebooks/01_statistics.ipynb`](notebooks/01_statistics.ipynb)
 
+One-page summary and recommendation: [`docs/summary.md`](docs/summary.md)
+
 ---
 
 ## Project plan
@@ -33,7 +35,7 @@ Full analysis: [`notebooks/01_statistics.ipynb`](notebooks/01_statistics.ipynb)
 - [x] **2. SQL analysis:** monthly revenue, repeat customers, delivery time by state, best and worst sellers
 - [x] **3. Statistics:** late vs on-time review scores (test + effect size + confidence interval), shipping cost across regions, regression, a bootstrapped confidence interval
 - [x] **4. Notebook:** one clean notebook that tells the story with charts
-- [ ] **5. Summary:** one page that ends with a business recommendation and says plainly what the data can't prove
+- [x] **5. Summary:** one page that ends with a business recommendation and says plainly what the data can't prove
 
 ## Repo layout
 
