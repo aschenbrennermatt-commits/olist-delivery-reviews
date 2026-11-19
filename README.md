@@ -6,7 +6,24 @@
 
 **Tools:** PostgreSQL, SQL (CTEs, window functions), Python (pandas, SciPy, statsmodels), Jupyter.
 
-> Status: **Step 2 of 5 done.** Database built and SQL analysis complete.
+> Status: **Step 4 of 5 done.** Analysis complete; summary and recommendation in progress.
+
+## Key results
+
+**Late deliveries cost about 2 stars.** Late orders average 2.27 stars vs 4.29 for on-time orders
+(95% CI for the gap: 1.97–2.05 after controls). More than half of late orders get 1 star.
+
+![Score distribution, late vs on-time](figures/score_distribution.png)
+
+**The gap holds after controls.** Controlling for region, product category, price, shipping cost
+and number of sellers barely changes it (−2.02 → −2.01 stars).
+
+**Shipping costs most where deliveries are already worst.** Customers in the North pay about
+twice the Southeast's median shipping cost, and the Northeast has the highest late-delivery rates.
+
+![Median shipping cost by region](figures/shipping_by_region.png)
+
+Full analysis: [`notebooks/01_statistics.ipynb`](notebooks/01_statistics.ipynb)
 
 ---
 
@@ -14,8 +31,8 @@
 
 - [x] **1. Database:** schema with primary and foreign keys, load all 9 CSVs, validate the load
 - [x] **2. SQL analysis:** monthly revenue, repeat customers, delivery time by state, best and worst sellers
-- [ ] **3. Statistics:** late vs on-time review scores (test + effect size + confidence interval), shipping cost across regions, regression, a bootstrapped confidence interval
-- [ ] **4. Notebook:** one clean notebook that tells the story with charts
+- [x] **3. Statistics:** late vs on-time review scores (test + effect size + confidence interval), shipping cost across regions, regression, a bootstrapped confidence interval
+- [x] **4. Notebook:** one clean notebook that tells the story with charts
 - [ ] **5. Summary:** one page that ends with a business recommendation and says plainly what the data can't prove
 
 ## Repo layout
