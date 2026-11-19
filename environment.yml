@@ -1,6 +1,6 @@
 name: olist
 channels:
-  - conde-forge
+  - conda-forge
 dependencies:
   - python=3.12
   - jupyterlab
