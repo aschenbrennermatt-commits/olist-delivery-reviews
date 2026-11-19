@@ -41,13 +41,18 @@ One-page summary and recommendation: [`docs/summary.md`](docs/summary.md)
 
 ```
 olist-delivery-reviews/
-├── data/raw/              # the Kaggle CSVs go here (not committed to git)
-├── docs/data_notes.md     # every data quirk found and what was done about it
-├── notebooks/             # analysis notebook (step 4)
+├── data/raw/            # Kaggle CSVs go here (not committed)
+├── docs/
+│   ├── data_notes.md    # data quirks and every analysis decision
+│   └── summary.md       # one-page summary and recommendation
+├── figures/             # charts used in this README
+├── notebooks/
+│   └── 01_statistics.ipynb
 ├── sql/
-│   ├── 01_create_schema.sql
-│   ├── 02_load_data.sql
-│   └── 03_check_load.sql
+│   ├── 01–03            # build, load and check the database
+│   ├── 04–09            # SQL analysis
+│   └── 10–11            # analysis table for the statistics
+├── environment.yml      # Python environment
 └── README.md
 ```
 
@@ -80,6 +85,15 @@ psql -d olist -f sql/03_check_load.sql
 ```
 
 The load takes about 15 seconds. Every row in check 1 should say `OK`.
+
+**6. Run the analysis notebook.**
+
+```bash
+conda env create -f environment.yml
+conda activate olist
+```
+
+Run `sql/10_latest_review.sql` and `sql/11_analysis_view.sql` in the database, then open `notebooks/01_statistics.ipynb` with the `olist` kernel and run all cells. You'll be asked for your PostgreSQL password.
 
 ## Database diagram
 

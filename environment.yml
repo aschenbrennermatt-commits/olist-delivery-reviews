@@ -1,0 +1,15 @@
+name: olist
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - jupyterlab
+  - matplotlib
+  - scipy
+  - psycopg
+  - seaborn
+  - statsmodels
+  - pandas
+  - ipykernel
+  - sqlalchemy
+prefix: /Users/home/miniconda3/envs/olist

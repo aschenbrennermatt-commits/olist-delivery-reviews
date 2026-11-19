@@ -6,7 +6,7 @@ Do late deliveries lower customer review scores on Olist, and by how much?
 ## What I found
 - Late orders score **2 stars lower** on average (4.29 → 2.27). 54% of late orders get 1 star vs 7% of on-time orders.
 - The gap holds after controlling for region, product category, price, shipping cost and number of sellers (−2.01 stars, 95% CI 1.97–2.05).
-- Customers react to missed promises, not slow delivery: northern states wait longest but are rarely late, because they're promised long delivery windows.
+- The pattern suggests customers react to **missed promises**, not slow delivery: northern states wait longest but are rarely late, because they're promised long delivery windows.
 - The Northeast has the highest late rates and pays the second-highest shipping costs.
 - Orders from multiple sellers get ~1 star lower per extra seller, likely because separate parcels arrive late without being recorded.
 
