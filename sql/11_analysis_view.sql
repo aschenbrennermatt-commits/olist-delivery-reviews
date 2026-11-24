@@ -22,7 +22,7 @@ main_category AS (
 	SELECT order_id, category
 	FROM ( 
 		SELECT oi.order_id,
-			COALESCE(t.product_category_name_english, 'unkown') AS category,
+			COALESCE(t.product_category_name_english, 'unknown') AS category,
 			ROW_NUMBER() OVER (PARTITION BY oi.order_id
 							   ORDER BY oi.price DESC, oi.order_item_id) AS rn
 		FROM order_items oi
